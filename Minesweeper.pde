@@ -7,7 +7,7 @@ private MSButton[][] buttons;
 private ArrayList <MSButton> mines = new ArrayList <MSButton>(); 
 void setup (){
     size(400, 400);
-    background(0);
+    background(255);
     textAlign(CENTER,CENTER);
     Interactive.make( this );
     buttons = new MSButton[NUM_ROWS][NUM_COLS];
