@@ -43,6 +43,7 @@ public void displayLosingMessage(){
     buttons[1][4].setLabel("A");
     buttons[1][5].setLabel("M");
     buttons[1][6].setLabel("E");
+    buttons[1][7].setLabel("");
     buttons[1][8].setLabel("O");
     buttons[1][9].setLabel("V");
     buttons[1][10].setLabel("E");
@@ -53,6 +54,7 @@ public void displayWinningMessage(){
     buttons[1][4].setLabel("Y");
     buttons[1][5].setLabel("O");
     buttons[1][6].setLabel("U");
+    buttons[1][7].setLabel("");
     buttons[1][8].setLabel("W");
     buttons[1][9].setLabel("I");
     buttons[1][10].setLabel("N");
