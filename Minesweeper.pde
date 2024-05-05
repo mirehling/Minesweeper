@@ -7,6 +7,7 @@ private MSButton[][] buttons;
 private ArrayList <MSButton> mines = new ArrayList <MSButton>(); 
 void setup (){
     size(400, 400);
+    background(0);
     textAlign(CENTER,CENTER);
     Interactive.make( this );
     buttons = new MSButton[NUM_ROWS][NUM_COLS];
@@ -38,24 +39,24 @@ public boolean isWon(){
     return false;
 }
 public void displayLosingMessage(){
-    buttons[10][4].setLabel("G");
-    buttons[10][5].setLabel("A");
-    buttons[10][6].setLabel("M");
-    buttons[10][7].setLabel("E");
-    buttons[10][9].setLabel("O");
-    buttons[10][10].setLabel("V");
-    buttons[10][11].setLabel("E");
-    buttons[10][12].setLabel("R");
-    buttons[10][13].setLabel("!");
+    buttons[1][4].setLabel("G");
+    buttons[1][5].setLabel("A");
+    buttons[1][6].setLabel("M");
+    buttons[1][7].setLabel("E");
+    buttons[1][9].setLabel("O");
+    buttons[1][10].setLabel("V");
+    buttons[1][11].setLabel("E");
+    buttons[1][12].setLabel("R");
+    buttons[1][13].setLabel("!");
 }
 public void displayWinningMessage(){
-    buttons[10][5].setLabel("Y");
-    buttons[10][6].setLabel("O");
-    buttons[10][7].setLabel("U");
-    buttons[10][9].setLabel("W");
-    buttons[10][10].setLabel("I");
-    buttons[10][11].setLabel("N");
-    buttons[10][12].setLabel("!");
+    buttons[1][5].setLabel("Y");
+    buttons[1][6].setLabel("O");
+    buttons[1][7].setLabel("U");
+    buttons[1][9].setLabel("W");
+    buttons[1][10].setLabel("I");
+    buttons[1][11].setLabel("N");
+    buttons[1][12].setLabel("!");
 }
 public boolean isValid(int r, int c){
     if(r <NUM_ROWS &&  c <NUM_COLS && r >=0 && c>=0){
