@@ -28,7 +28,7 @@ public void setMines(){
   }
 }
 public void draw (){
-    background( 100 );
+    background( 255 );
     if(isWon() == true)
         displayWinningMessage();
 }
@@ -39,24 +39,24 @@ public boolean isWon(){
     return false;
 }
 public void displayLosingMessage(){
-    buttons[1][4].setLabel("G");
-    buttons[1][5].setLabel("A");
-    buttons[1][6].setLabel("M");
-    buttons[1][7].setLabel("E");
-    buttons[1][9].setLabel("O");
-    buttons[1][10].setLabel("V");
-    buttons[1][11].setLabel("E");
-    buttons[1][12].setLabel("R");
-    buttons[1][13].setLabel("!");
+    buttons[1][3].setLabel("G");
+    buttons[1][4].setLabel("A");
+    buttons[1][5].setLabel("M");
+    buttons[1][6].setLabel("E");
+    buttons[1][8].setLabel("O");
+    buttons[1][9].setLabel("V");
+    buttons[1][10].setLabel("E");
+    buttons[1][11].setLabel("R");
+    buttons[1][12].setLabel("!");
 }
 public void displayWinningMessage(){
-    buttons[1][5].setLabel("Y");
-    buttons[1][6].setLabel("O");
-    buttons[1][7].setLabel("U");
-    buttons[1][9].setLabel("W");
-    buttons[1][10].setLabel("I");
-    buttons[1][11].setLabel("N");
-    buttons[1][12].setLabel("!");
+    buttons[1][4].setLabel("Y");
+    buttons[1][5].setLabel("O");
+    buttons[1][6].setLabel("U");
+    buttons[1][8].setLabel("W");
+    buttons[1][9].setLabel("I");
+    buttons[1][10].setLabel("N");
+    buttons[1][11].setLabel("!");
 }
 public boolean isValid(int r, int c){
     if(r <NUM_ROWS &&  c <NUM_COLS && r >=0 && c>=0){
